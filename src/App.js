@@ -11,6 +11,7 @@ import PrivateRoute from './components/Home/PrivevateRoute/PrivateRoute';
 import ServiceDetails from './components/Home/service/ServiceDetails/ServiceDetails';
 import AddService from './components/Home/AddService/AddService';
 import ManageOrder from './components/Home/ManageService/ManageOrder';
+import Myorder from './components/Home/ManageService/Myorder';
 
 function App() {
   return (
@@ -38,6 +39,9 @@ function App() {
             </PrivateRoute>
             <Route path="/services">
               <Service></Service>
+            </Route>
+            <Route path="/myorders">
+              <Myorder></Myorder>
             </Route>
             <Route path="*">
               <NotFount></NotFount>

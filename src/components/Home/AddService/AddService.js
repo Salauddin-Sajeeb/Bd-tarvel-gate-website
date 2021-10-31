@@ -6,7 +6,7 @@ const AddService = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         console.log(data);
-        axios.post('http://localhost:5000/packages', data)
+        axios.post('https://peaceful-fortress-22704.herokuapp.com/packages', data)
             .then(res => {
                 if (data.insertedId) {
                     alert("new data added successfully");

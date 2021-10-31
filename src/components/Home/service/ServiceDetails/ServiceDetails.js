@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { useParams } from 'react-router';
 import useAuth from '../../../Hooks/UseAuth';
+import Header from '../../Header/Header';
 import './servicedetail.css'
 
 const ServiceDetails = () => {
@@ -24,7 +25,7 @@ const ServiceDetails = () => {
 
     const onSubmit = data => {
         console.log(data)
-        fetch('http://localhost:5000/orders', {
+        fetch('https://peaceful-fortress-22704.herokuapp.com/orders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -45,28 +46,31 @@ const ServiceDetails = () => {
 
 
     return (
-        <div className="row mt-5">
-            <div className="col-md-6">
-                <h3>{singleDetail?.name}</h3>
-                <img className="img-fluid" src={singleDetail?.img} alt="" />
-                <p>{singleDetail?.description}</p>
+        <div>
+            <Header></Header>
+            <div className="row mt-5">
+                <div className="col-md-6">
+                    <h3>{singleDetail?.name}</h3>
+                    <img className="img-fluid" src={singleDetail?.img} alt="" />
+                    <p>{singleDetail?.description}</p>
+                </div>
+                <div className="col-md-6">
+                    <h1>Order confirm</h1>
+                    <form onSubmit={handleSubmit(onSubmit)}>
+
+                        <input className="m-2" defaultValue={user.displayName} {...register("name")} />
+
+                        <input className="m-2" defaultValue={user.email} {...register("email", { required: true })} />
+                        {errors.email && <span className="error">This field is required</span>}
+                        <input className="m-2" placeholder="Address" defaultValue="" {...register("address")} />
+                        <input className="m-2" placeholder="City" defaultValue="" {...register("city")} />
+                        <input className="m-2" placeholder="phone number" defaultValue="" {...register("phone")} />
+
+                        <input type="submit" />
+                    </form>
+                </div>
+
             </div>
-            <div className="col-md-6">
-                <h1>Order confirm</h1>
-                <form onSubmit={handleSubmit(onSubmit)}>
-
-                    <input className="m-2" defaultValue={user.displayName} {...register("name")} />
-
-                    <input className="m-2" defaultValue={user.email} {...register("email", { required: true })} />
-                    {errors.email && <span className="error">This field is required</span>}
-                    <input className="m-2" placeholder="Address" defaultValue="" {...register("address")} />
-                    <input className="m-2" placeholder="City" defaultValue="" {...register("city")} />
-                    <input className="m-2" placeholder="phone number" defaultValue="" {...register("phone")} />
-
-                    <input type="submit" />
-                </form>
-            </div>
-
         </div>
     );
 };

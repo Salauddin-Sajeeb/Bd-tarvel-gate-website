@@ -13,8 +13,8 @@ const Banner = () => {
                         alt="Bangkok"
                     />
                     <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <h3> Bangkok</h3>
+                        <p>visit Bangkok with lower price.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -25,8 +25,8 @@ const Banner = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h3>australia</h3>
+                        <p>Visit Australia with lower cost</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -37,8 +37,8 @@ const Banner = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        <h3>Canada</h3>
+                        <p>visit canada with lower cost</p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

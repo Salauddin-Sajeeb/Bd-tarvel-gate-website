@@ -13,7 +13,7 @@ const ServiceDetails = () => {
     const [singleDetail, setSingleDetails] = useState({})
 
     useEffect(() => {
-        fetch('http://peaceful-fortress-22704.herokuapp.com/packages')
+        fetch('https://peaceful-fortress-22704.herokuapp.com/packages')
             .then(res => res.json())
             .then(data => setDetails(data))
     }, [])

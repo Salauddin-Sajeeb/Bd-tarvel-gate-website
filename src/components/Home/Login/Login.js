@@ -18,7 +18,8 @@ const Login = () => {
 
         <div>
             <Header></Header>
-            <button onClick={handleGoogleSignIn} className="btn-primary">Google sign in</button>
+            <h1 className="mt-5">Please Log in</h1>
+            <button onClick={handleGoogleSignIn} className="btn-primary mt-5"><span><i class="fab fa-google"></i></span> Google sign in</button>
         </div>
     );
 };

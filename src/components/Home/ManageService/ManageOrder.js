@@ -16,7 +16,8 @@ const ManageOrder = () => {
             <h1>All orders : {order.length}</h1>
             <ul>
                 {
-                    order.map(user => <li key={user._id}> Name: {user.name}</li>)
+                    order.map(user => <li key={user._id}> Name: {user.name}
+                        <button>cancel order</button></li>)
                 }
             </ul>
 

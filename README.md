@@ -6,9 +6,9 @@ This is an Tourism service website which have some different services
 
  🔗 Links
  
- Server Side Link: (https://github.com/programming-hero-web-course1/tourism-or-delivery-website-server-side-Salauddin-Sajeeb)
+ Server Side Link: (https://github.com/Salauddin-Sajeeb/Bd-tarvel-gate-website)
 
- Client Side Github:(https://github.com/programming-hero-web-course1/tourism-or-delivery-website-client-side-Salauddin-Sajeeb)
+ Client Side Github:(https://github.com/Salauddin-Sajeeb/bd-travel-gate-server)
 
 Website Live Link : https://bd-travel-gate.web.app/
   
